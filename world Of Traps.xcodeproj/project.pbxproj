@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B31F83B31D07CE0D00E8D350 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F83B21D07CE0D00E8D350 /* Enemy.swift */; };
+		B32012081D6C0035002836DB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32012071D6C0035002836DB /* GoogleMobileAds.framework */; };
+		B320120A1D6C006F002836DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B32012091D6C006F002836DB /* GoogleService-Info.plist */; };
+		B35078951D1A0AC4008F11DA /* LevelSelectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35078941D1A0AC4008F11DA /* LevelSelectionScene.swift */; };
+		B35078971D1A0B06008F11DA /* LevelSelectionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B35078961D1A0B06008F11DA /* LevelSelectionScene.sks */; };
+		B370DD631D47D9C600CF184F /* basicTrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370DD621D47D9C600CF184F /* basicTrap.swift */; };
+		B3734CC01E58A4E2008FA3E3 /* PlaySceneWithCommentedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3734CBF1E58A4E1008FA3E3 /* PlaySceneWithCommentedCode.swift */; };
+		B37926371CFC74A7004BA1A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37926361CFC74A7004BA1A9 /* AppDelegate.swift */; };
+		B37926391CFC74A7004BA1A9 /* PlayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B37926381CFC74A7004BA1A9 /* PlayScene.sks */; };
+		B379263B1CFC74A7004BA1A9 /* PlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379263A1CFC74A7004BA1A9 /* PlayScene.swift */; };
+		B379263D1CFC74A7004BA1A9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379263C1CFC74A7004BA1A9 /* GameViewController.swift */; };
+		B37926401CFC74A8004BA1A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B379263E1CFC74A8004BA1A9 /* Main.storyboard */; };
+		B37926421CFC74A8004BA1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37926411CFC74A8004BA1A9 /* Assets.xcassets */; };
+		B37926451CFC74A8004BA1A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37926431CFC74A8004BA1A9 /* LaunchScreen.storyboard */; };
+		B379265B1CFC74A8004BA1A9 /* world_Of_TrapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379265A1CFC74A8004BA1A9 /* world_Of_TrapsUITests.swift */; };
+		B379266D1CFC8B15004BA1A9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379266C1CFC8B15004BA1A9 /* GameScene.swift */; };
+		B379266F1CFCA9C6004BA1A9 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379266E1CFCA9C6004BA1A9 /* Map.swift */; };
+		B385B2041D8A4B5800DF8B22 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B385B2021D8A4B5800DF8B22 /* Info.plist */; };
+		B385B2051D8A4B5800DF8B22 /* world_Of_TrapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385B2031D8A4B5800DF8B22 /* world_Of_TrapsTests.swift */; };
+		B38B56B41D47BC6C0028523E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B38B56B31D47BC6C0028523E /* GameScene.sks */; };
+		B39C9D821D7755EC007A5D26 /* SpeechBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C9D811D7755EC007A5D26 /* SpeechBubble.swift */; };
+		B3BE7C7C1D0A68DC00441499 /* Trap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE7C7B1D0A68DC00441499 /* Trap.swift */; };
+		B3E6B6621DDAB03700EBE7F2 /* PlaySceneOld2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6B6611DDAB03700EBE7F2 /* PlaySceneOld2.swift */; };
+		B3FA720E1D38046A00ACFE77 /* PlaySceneWorkingOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA720D1D38046A00ACFE77 /* PlaySceneWorkingOld.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B379264C1CFC74A8004BA1A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B379262B1CFC74A7004BA1A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37926321CFC74A7004BA1A9;
+			remoteInfo = "world Of Traps";
+		};
+		B37926571CFC74A8004BA1A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B379262B1CFC74A7004BA1A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37926321CFC74A7004BA1A9;
+			remoteInfo = "world Of Traps";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B31F83B21D07CE0D00E8D350 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		B32012071D6C0035002836DB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		B32012091D6C006F002836DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B35078941D1A0AC4008F11DA /* LevelSelectionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectionScene.swift; sourceTree = "<group>"; };
+		B35078961D1A0B06008F11DA /* LevelSelectionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelectionScene.sks; sourceTree = "<group>"; };
+		B370DD621D47D9C600CF184F /* basicTrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basicTrap.swift; sourceTree = "<group>"; };
+		B3734CBF1E58A4E1008FA3E3 /* PlaySceneWithCommentedCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySceneWithCommentedCode.swift; sourceTree = "<group>"; };
+		B37926331CFC74A7004BA1A9 /* world Of Traps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "world Of Traps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37926361CFC74A7004BA1A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37926381CFC74A7004BA1A9 /* PlayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayScene.sks; sourceTree = "<group>"; };
+		B379263A1CFC74A7004BA1A9 /* PlayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScene.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		B379263C1CFC74A7004BA1A9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B379263F1CFC74A8004BA1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B37926411CFC74A8004BA1A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37926441CFC74A8004BA1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37926461CFC74A8004BA1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B379264B1CFC74A8004BA1A9 /* world Of TrapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "world Of TrapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37926561CFC74A8004BA1A9 /* world Of TrapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "world Of TrapsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B379265A1CFC74A8004BA1A9 /* world_Of_TrapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = world_Of_TrapsUITests.swift; sourceTree = "<group>"; };
+		B379265C1CFC74A8004BA1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B379266C1CFC8B15004BA1A9 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B379266E1CFCA9C6004BA1A9 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		B385B2021D8A4B5800DF8B22 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B385B2031D8A4B5800DF8B22 /* world_Of_TrapsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = world_Of_TrapsTests.swift; sourceTree = "<group>"; };
+		B38B56B31D47BC6C0028523E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B39C9D811D7755EC007A5D26 /* SpeechBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechBubble.swift; sourceTree = "<group>"; };
+		B3BE7C7B1D0A68DC00441499 /* Trap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trap.swift; sourceTree = "<group>"; };
+		B3E6B6611DDAB03700EBE7F2 /* PlaySceneOld2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySceneOld2.swift; sourceTree = "<group>"; };
+		B3FA720D1D38046A00ACFE77 /* PlaySceneWorkingOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySceneWorkingOld.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37926301CFC74A7004BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32012081D6C0035002836DB /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926481CFC74A8004BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926531CFC74A8004BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B379262A1CFC74A7004BA1A9 = {
+			isa = PBXGroup;
+			children = (
+				B32012091D6C006F002836DB /* GoogleService-Info.plist */,
+				B32012071D6C0035002836DB /* GoogleMobileAds.framework */,
+				B37926351CFC74A7004BA1A9 /* world Of Traps */,
+				B379264E1CFC74A8004BA1A9 /* world Of TrapsTests */,
+				B37926591CFC74A8004BA1A9 /* world Of TrapsUITests */,
+				B37926341CFC74A7004BA1A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B37926341CFC74A7004BA1A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37926331CFC74A7004BA1A9 /* world Of Traps.app */,
+				B379264B1CFC74A8004BA1A9 /* world Of TrapsTests.xctest */,
+				B37926561CFC74A8004BA1A9 /* world Of TrapsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37926351CFC74A7004BA1A9 /* world Of Traps */ = {
+			isa = PBXGroup;
+			children = (
+				B37926361CFC74A7004BA1A9 /* AppDelegate.swift */,
+				B37926381CFC74A7004BA1A9 /* PlayScene.sks */,
+				B379263A1CFC74A7004BA1A9 /* PlayScene.swift */,
+				B3734CBF1E58A4E1008FA3E3 /* PlaySceneWithCommentedCode.swift */,
+				B3E6B6611DDAB03700EBE7F2 /* PlaySceneOld2.swift */,
+				B3FA720D1D38046A00ACFE77 /* PlaySceneWorkingOld.swift */,
+				B3BE7C7B1D0A68DC00441499 /* Trap.swift */,
+				B370DD621D47D9C600CF184F /* basicTrap.swift */,
+				B31F83B21D07CE0D00E8D350 /* Enemy.swift */,
+				B379266E1CFCA9C6004BA1A9 /* Map.swift */,
+				B379263C1CFC74A7004BA1A9 /* GameViewController.swift */,
+				B38B56B31D47BC6C0028523E /* GameScene.sks */,
+				B379266C1CFC8B15004BA1A9 /* GameScene.swift */,
+				B39C9D811D7755EC007A5D26 /* SpeechBubble.swift */,
+				B35078941D1A0AC4008F11DA /* LevelSelectionScene.swift */,
+				B35078961D1A0B06008F11DA /* LevelSelectionScene.sks */,
+				B379263E1CFC74A8004BA1A9 /* Main.storyboard */,
+				B37926411CFC74A8004BA1A9 /* Assets.xcassets */,
+				B37926431CFC74A8004BA1A9 /* LaunchScreen.storyboard */,
+				B37926461CFC74A8004BA1A9 /* Info.plist */,
+			);
+			path = "world Of Traps";
+			sourceTree = "<group>";
+		};
+		B379264E1CFC74A8004BA1A9 /* world Of TrapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B385B2021D8A4B5800DF8B22 /* Info.plist */,
+				B385B2031D8A4B5800DF8B22 /* world_Of_TrapsTests.swift */,
+			);
+			path = "world Of TrapsTests";
+			sourceTree = "<group>";
+		};
+		B37926591CFC74A8004BA1A9 /* world Of TrapsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B379265A1CFC74A8004BA1A9 /* world_Of_TrapsUITests.swift */,
+				B379265C1CFC74A8004BA1A9 /* Info.plist */,
+			);
+			path = "world Of TrapsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37926321CFC74A7004BA1A9 /* world Of Traps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B379265F1CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of Traps" */;
+			buildPhases = (
+				B379262F1CFC74A7004BA1A9 /* Sources */,
+				B37926301CFC74A7004BA1A9 /* Frameworks */,
+				B37926311CFC74A7004BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "world Of Traps";
+			productName = "world Of Traps";
+			productReference = B37926331CFC74A7004BA1A9 /* world Of Traps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B379264A1CFC74A8004BA1A9 /* world Of TrapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37926621CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of TrapsTests" */;
+			buildPhases = (
+				B37926471CFC74A8004BA1A9 /* Sources */,
+				B37926481CFC74A8004BA1A9 /* Frameworks */,
+				B37926491CFC74A8004BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B379264D1CFC74A8004BA1A9 /* PBXTargetDependency */,
+			);
+			name = "world Of TrapsTests";
+			productName = "world Of TrapsTests";
+			productReference = B379264B1CFC74A8004BA1A9 /* world Of TrapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B37926551CFC74A8004BA1A9 /* world Of TrapsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37926651CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of TrapsUITests" */;
+			buildPhases = (
+				B37926521CFC74A8004BA1A9 /* Sources */,
+				B37926531CFC74A8004BA1A9 /* Frameworks */,
+				B37926541CFC74A8004BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37926581CFC74A8004BA1A9 /* PBXTargetDependency */,
+			);
+			name = "world Of TrapsUITests";
+			productName = "world Of TrapsUITests";
+			productReference = B37926561CFC74A8004BA1A9 /* world Of TrapsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B379262B1CFC74A7004BA1A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Cullimore Family";
+				TargetAttributes = {
+					B37926321CFC74A7004BA1A9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q2BXHJ97H8;
+						LastSwiftMigration = 0800;
+					};
+					B379264A1CFC74A8004BA1A9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q2BXHJ97H8;
+						LastSwiftMigration = 0800;
+						TestTargetID = B37926321CFC74A7004BA1A9;
+					};
+					B37926551CFC74A8004BA1A9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q2BXHJ97H8;
+						LastSwiftMigration = 0800;
+						TestTargetID = B37926321CFC74A7004BA1A9;
+					};
+				};
+			};
+			buildConfigurationList = B379262E1CFC74A7004BA1A9 /* Build configuration list for PBXProject "world Of Traps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B379262A1CFC74A7004BA1A9;
+			productRefGroup = B37926341CFC74A7004BA1A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37926321CFC74A7004BA1A9 /* world Of Traps */,
+				B379264A1CFC74A8004BA1A9 /* world Of TrapsTests */,
+				B37926551CFC74A8004BA1A9 /* world Of TrapsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37926311CFC74A7004BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37926391CFC74A7004BA1A9 /* PlayScene.sks in Resources */,
+				B35078971D1A0B06008F11DA /* LevelSelectionScene.sks in Resources */,
+				B37926451CFC74A8004BA1A9 /* LaunchScreen.storyboard in Resources */,
+				B37926421CFC74A8004BA1A9 /* Assets.xcassets in Resources */,
+				B38B56B41D47BC6C0028523E /* GameScene.sks in Resources */,
+				B37926401CFC74A8004BA1A9 /* Main.storyboard in Resources */,
+				B320120A1D6C006F002836DB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926491CFC74A8004BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B385B2041D8A4B5800DF8B22 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926541CFC74A8004BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B379262F1CFC74A7004BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35078951D1A0AC4008F11DA /* LevelSelectionScene.swift in Sources */,
+				B39C9D821D7755EC007A5D26 /* SpeechBubble.swift in Sources */,
+				B379266F1CFCA9C6004BA1A9 /* Map.swift in Sources */,
+				B379263B1CFC74A7004BA1A9 /* PlayScene.swift in Sources */,
+				B3FA720E1D38046A00ACFE77 /* PlaySceneWorkingOld.swift in Sources */,
+				B3BE7C7C1D0A68DC00441499 /* Trap.swift in Sources */,
+				B370DD631D47D9C600CF184F /* basicTrap.swift in Sources */,
+				B31F83B31D07CE0D00E8D350 /* Enemy.swift in Sources */,
+				B379263D1CFC74A7004BA1A9 /* GameViewController.swift in Sources */,
+				B379266D1CFC8B15004BA1A9 /* GameScene.swift in Sources */,
+				B37926371CFC74A7004BA1A9 /* AppDelegate.swift in Sources */,
+				B3734CC01E58A4E2008FA3E3 /* PlaySceneWithCommentedCode.swift in Sources */,
+				B3E6B6621DDAB03700EBE7F2 /* PlaySceneOld2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926471CFC74A8004BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B385B2051D8A4B5800DF8B22 /* world_Of_TrapsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37926521CFC74A8004BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B379265B1CFC74A8004BA1A9 /* world_Of_TrapsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B379264D1CFC74A8004BA1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37926321CFC74A7004BA1A9 /* world Of Traps */;
+			targetProxy = B379264C1CFC74A8004BA1A9 /* PBXContainerItemProxy */;
+		};
+		B37926581CFC74A8004BA1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37926321CFC74A7004BA1A9 /* world Of Traps */;
+			targetProxy = B37926571CFC74A8004BA1A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B379263E1CFC74A8004BA1A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B379263F1CFC74A8004BA1A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B37926431CFC74A8004BA1A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37926441CFC74A8004BA1A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B379265D1CFC74A8004BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B379265E1CFC74A8004BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37926601CFC74A8004BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "world Of Traps/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-Traps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B37926611CFC74A8004BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "world Of Traps/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-Traps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B37926631CFC74A8004BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "world Of TrapsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-TrapsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "world Of TrapsTests/world Of TrapsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/world Of Traps.app/world Of Traps";
+			};
+			name = Debug;
+		};
+		B37926641CFC74A8004BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "world Of TrapsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-TrapsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "world Of TrapsTests/world Of TrapsTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/world Of Traps.app/world Of Traps";
+			};
+			name = Release;
+		};
+		B37926661CFC74A8004BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "world Of TrapsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-TrapsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "world Of Traps";
+			};
+			name = Debug;
+		};
+		B37926671CFC74A8004BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "world Of TrapsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cullimore.family.world-Of-TrapsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "world Of Traps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B379262E1CFC74A7004BA1A9 /* Build configuration list for PBXProject "world Of Traps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B379265D1CFC74A8004BA1A9 /* Debug */,
+				B379265E1CFC74A8004BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B379265F1CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of Traps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37926601CFC74A8004BA1A9 /* Debug */,
+				B37926611CFC74A8004BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37926621CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of TrapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37926631CFC74A8004BA1A9 /* Debug */,
+				B37926641CFC74A8004BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37926651CFC74A8004BA1A9 /* Build configuration list for PBXNativeTarget "world Of TrapsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37926661CFC74A8004BA1A9 /* Debug */,
+				B37926671CFC74A8004BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B379262B1CFC74A7004BA1A9 /* Project object */;
+}
