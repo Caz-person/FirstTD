@@ -966,6 +966,7 @@ class PlayScene: SKScene, GADInterstitialDelegate {
     }
     func initTrap(_ trap: Trap, cost: String, descripion: String) {
         trap.texture = SKTexture(imageNamed: trap.name!)
+        print("change")
         for trapTexture in sideBarTraps {
             if trapTexture.description == trap.texture?.description {
                 
