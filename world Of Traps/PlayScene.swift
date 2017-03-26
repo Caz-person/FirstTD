@@ -15,29 +15,29 @@ import GoogleMobileAds
 class PlayScene: SKScene, GADInterstitialDelegate {
     var startWaveButton = SKSpriteNode(imageNamed: "arrow")
     var bombSideBarTrap  = Trap()
-    var bombSideBarTrapSelected = Trap()
+//    var bombSideBarTrapSelected = Trap()
     var waterWheelSideBarTrap = Trap()
-    var waterWheelSideBarTrapSelectedPic = Trap()
+//    var waterWheelSideBarTrapSelectedPic = Trap()
     var reverseSideBarTrap = Trap()
-    var reverseSideBarTrapSelectedPic = Trap()
+//    var reverseSideBarTrapSelectedPic = Trap()
     var freezeSideBarTrap = Trap()
-    var freezeSideBarTrapSelectedPic = Trap()
+//    var freezeSideBarTrapSelectedPic = Trap()
     var powerPlantSideBarTrap = Trap ()
-    var powerPlantSideBarTrapSelectedPic = Trap()
+//    var powerPlantSideBarTrapSelectedPic = Trap()
     var trapSideBar = SKSpriteNode(imageNamed: "trapSideBar")
     var trapDestroyingHammer = Trap()
     var poisonSideBarTrap = Trap()
-    var poisonSideBarTrapSelectedPic = Trap()
+//    var poisonSideBarTrapSelectedPic = Trap()
     var windTurbineSideBarTrap = Trap()
-    var windTurbineSideBarTrapSelectedPic = Trap()
+//    var windTurbineSideBarTrapSelectedPic = Trap()
     var hospitalSideBarTrap = Trap()
-    var hospitalSideBarTrapSelectedPic = Trap()
+//    var hospitalSideBarTrapSelectedPic = Trap()
     var basicSideBarTrap = Trap()
-    var basicSideBarTrapSelectedPic = Trap()
+//    var basicSideBarTrapSelectedPic = Trap()
     var batterySideBarTrap = Trap()
-    var batterySideBarTrapSelectedPic = Trap()
+//    var batterySideBarTrapSelectedPic = Trap()
     var wireSideBarTrap = Trap()
-    var wireSideBarTrapSelectedPic = Trap()
+//    var wireSideBarTrapSelectedPic = Trap()
     var restartButton = SKSpriteNode(imageNamed: "restartButton")
     var pauseButton = SKSpriteNode(imageNamed: "pauseButton")
     let pauseLabel = SKLabelNode(text: "Paused")
@@ -106,7 +106,7 @@ class PlayScene: SKScene, GADInterstitialDelegate {
         sleep(1)
         //print("slept")
 //         startWaveButton.texture = SKTexture(imageNamed: "arrow")
-         bombSideBarTrap.texture  = SKTexture(imageNamed: "bombTrap")
+         bombSideBarTrap.texture = SKTexture(imageNamed: "bombTrap")
 //         bombSideBarTrapSelected.texture = SKTexture(imageNamed: "bombTrapSelected")
          waterWheelSideBarTrap.texture = SKTexture(imageNamed: "waterWheel")
 //         waterWheelSideBarTrapSelectedPic.texture = SKTexture(imageNamed: "waterWheelSelected")
@@ -136,7 +136,7 @@ class PlayScene: SKScene, GADInterstitialDelegate {
 //         restartButton = SKSpriteNode(imageNamed: "restartButton")
 //         pauseButton = SKSpriteNode(imageNamed: "pauseButton")
 
-//        trapTypes = [basicSideBarTrap,batterySideBarTrap, wireSideBarTrap, hospitalSideBarTrap, windTurbineSideBarTrap, poisonSideBarTrap, trapDestroyingHammer, powerPlantSideBarTrap, freezeSideBarTrap, reverseSideBarTrap, waterWheelSideBarTrap, bombSideBarTrap]
+        trapTypes = [basicSideBarTrap,batterySideBarTrap, wireSideBarTrap, hospitalSideBarTrap, windTurbineSideBarTrap, poisonSideBarTrap, powerPlantSideBarTrap, freezeSideBarTrap, reverseSideBarTrap, waterWheelSideBarTrap, bombSideBarTrap]
         
 //        selectedTrapTypes = [basicSideBarTrapSelectedPic, batterySideBarTrapSelectedPic, wireSideBarTrapSelectedPic, hospitalSideBarTrapSelectedPic, windTurbineSideBarTrapSelectedPic,poisonSideBarTrapSelectedPic, powerPlantSideBarTrapSelectedPic, freezeSideBarTrapSelectedPic, reverseSideBarTrapSelectedPic, waterWheelSideBarTrapSelectedPic, bombSideBarTrapSelected]
 //        basicSideBarTrap.texture = SKTexture(image: UIImage(named: "basicTrap")!)
@@ -164,8 +164,8 @@ class PlayScene: SKScene, GADInterstitialDelegate {
         for trapTexture in sideBarTraps {
             for trap in trapTypes {
                 if trap.texture!.description == trapTexture.description {
-                    var currentTrap = trapTypes[selectedTrapTypes.index(of: trap)!]
-                    currentTrapTypes.append(currentTrap)
+//                    var currentTrap = trapTypes[selectedTrapTypes.index(of: trap)!]
+                    currentTrapTypes.append(trap)
 //                    currentSelectedTrapTypes.append(selectedTrap)
                     
                 }
@@ -460,9 +460,9 @@ class PlayScene: SKScene, GADInterstitialDelegate {
                 }
             }
                 
-                for trap in trapTypes {
-                    trapTouchControl(trap, selectedTrap: selectedTrapTypes[trapTypes.index(of: trap)!], touch: self.atPoint(location), otherTraps: trapTypes, otherTrapsSelected: selectedTrapTypes)
-                }
+                    for trap in trapTypes {
+                        trapTouchControl(trap, touch: self.atPoint(location), otherTraps: trapTypes)
+                    }
                 }
             }
         }
@@ -778,11 +778,13 @@ class PlayScene: SKScene, GADInterstitialDelegate {
         return CGPoint(x: CGFloat(coordinate.x) * trapSize + gridStart.x + trapSize / 2, y: CGFloat(coordinate.y) * trapSize +
             gridStart.y + trapSize / 2)
     }
-    func trapTouchControl(_ trap: Trap, selectedTrap: Trap, touch: SKNode, otherTraps: [Trap], otherTrapsSelected: [Trap] ){
+    func trapTouchControl(_ trap: Trap, touch: SKNode, otherTraps: [Trap]){
 //        if let touchSprite = touch as? SKSpriteNode {
-        print("ran?")
+//        print("ran?")
             if touch.position == trap.position {
-                if trap.selected {
+                print("ran?")
+                if trap.selected == false {
+                    print("selected")
                 trap.texture = trap.selectedTexture
     //            trap.removeFromParent()
     //            self.addChild(selectedTrap)
@@ -795,8 +797,9 @@ class PlayScene: SKScene, GADInterstitialDelegate {
                     if sideBarTrap.selected == true {
                         sideBarTrap.descriptionLabel.removeFromSuperview()
                         sideBarTrap.selected = false
-                        otherTrapsSelected[otherTraps.index(of: sideBarTrap)!].texture = otherTrapsSelected[otherTraps.index(of: sideBarTrap)!].normalTexture
-                        addChild(sideBarTrap)
+//                        otherTrapsSelected[otherTraps.index(of: sideBarTrap)!].texture = otherTrapsSelected[otherTraps.index(of: sideBarTrap)!].normalTexture
+                        sideBarTrap.texture = sideBarTrap.normalTexture
+//                        addChild(sideBarTrap)
                         break
                     }
                 }
@@ -966,7 +969,7 @@ class PlayScene: SKScene, GADInterstitialDelegate {
     }
     func initTrap(_ trap: Trap, cost: String, descripion: String) {
         trap.texture = SKTexture(imageNamed: trap.name!)
-        print("change")
+//        print("change #2")
         for trapTexture in sideBarTraps {
             if trapTexture.description == trap.texture?.description {
                 
